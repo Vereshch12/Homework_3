@@ -49,5 +49,32 @@ public class Main {
             deliveryPeriod += 1 + (deliveryDistance - 20) / 40;
             System.out.println("\nПотребуется дней на доставку: " + deliveryPeriod);
         }
+
+        //Задание №5
+        int monthNumber = 10;
+        switch (monthNumber) {
+            case 12:
+            case 1:
+            case 2:
+                System.out.println("\nЭто зимний месяц");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("\nЭто весенний месяц");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("\nЭто летний месяц");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("\nЭто осенний месяц");
+                break;
+            default:
+                System.out.println("\nТакого месяца существует");
+        }
     }
 }
