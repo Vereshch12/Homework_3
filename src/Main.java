@@ -79,8 +79,8 @@ public class Main {
 
 
         //Задание №6
-        byte age = 39;
-        int salary = 100000;
+        byte age = 25;
+        int salary = 60000;
         int limit;
         if (age < 23){
             limit = salary*2;
@@ -93,5 +93,19 @@ public class Main {
             limit *= 1.2;
         }
         System.out.println("\nМы готовы выдать вам кредитную карту с лимитом " + limit + " рублей");
+
+
+        //Задание №7
+        //P.S переменная age и salary названа в задании №6;
+        int wantedSum = 330000;
+        float loanRate = 0.1f;
+        if ((age >= 23) && (age < 30)) loanRate += 0.005;
+        if (age < 23) loanRate += 0.01;
+        if (salary >= 80000) loanRate -= 0.007;
+        int maxPayment = salary/2;
+        float CreditPayment = (wantedSum + wantedSum*loanRate)/12;
+        if (maxPayment >= CreditPayment){
+            System.out.println("\nМаксимальный платеж при ЗП " + salary + " равен " + maxPayment + " рублей. \nПлатеж по кредиту: " + CreditPayment + " рублей. \nОдобрено!");
+        }else System.out.println("\nМаксимальный платеж при ЗП " + salary + " равен " + maxPayment + " рублей. \nПлатеж по кредиту: " + CreditPayment + " рублей. \nОтказано!");
     }
 }
