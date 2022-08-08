@@ -32,5 +32,12 @@ public class Main {
         } else{
                 System.out.println("\nУстановите облегченную версию приложения для Android по ссылке");
         }
+
+        //Задание №3
+        int year = 2020;
+        if (year % 4 == 0) {
+            System.out.println("\n" + year + " год високосный!");
+        }else
+            System.out.println("\n" + year + " год не високосный!");
     }
 }
